@@ -65,7 +65,7 @@ h6 {
 }
 
 .section {
-  @apply py-12 xl:py-[150px];
+  @apply py-11 xl:py-[130px];
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
