@@ -75,6 +75,6 @@ h6 {
 }
 
 /* Faq */
-.faq__item.open .faq__answer {
+.faq__item.open .faq__answers {
   @apply h-full;
 }

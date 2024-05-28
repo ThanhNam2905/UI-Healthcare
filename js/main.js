@@ -22,3 +22,53 @@ closeBtn.addEventListener('click', () => {
     closeBtnIcon.classList.add(closeRightIcon);
   }
 });
+
+// swiper js
+const testimionalsSwiper = new Swiper('.testimionals__swiper', {
+  // Optional parameters
+  loop: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+const teamsSwiper = new Swiper('.teams__swiper', {
+  // Optional parameters
+  loop: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+// Faq
+const faqItems = document.querySelectorAll('.faq__item');
+
+faqItems.forEach((item) => {
+  const faqBtn = item.querySelector('.faq__btn');
+
+  item.addEventListener('click', () => {
+    const isOpen = item.classList.toggle('open');
+    const iconClass = isOpen ? 'ri-subtract-fill' : 'ri-add-fill';
+    const iconColor = isOpen ? 'text-secondary' : 'text-accent-default';
+    const iconElement = faqBtn.querySelector('i');
+    iconElement.classList = `${iconClass} ${iconColor} text-2xl`;
+  });
+});
