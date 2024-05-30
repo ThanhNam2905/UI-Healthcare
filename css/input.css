@@ -16,7 +16,7 @@ h6 {
 }
 
 .h1 {
-  @apply text-[36px] xl:text-[64px] font-semibold;
+  @apply text-[33px] xl:text-[58px] font-semibold;
 }
 
 .h2 {
@@ -28,7 +28,7 @@ h6 {
 }
 
 .h4 {
-  @apply text-[20px] xl:text-[26px] font-semibold capitalize;
+  @apply text-[17px] xl:text-[23px] font-semibold capitalize;
 }
 
 .btn {

@@ -72,3 +72,87 @@ faqItems.forEach((item) => {
     iconElement.classList = `${iconClass} ${iconColor} text-2xl`;
   });
 });
+
+// Scroll reveal animations
+const sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '60px',
+  duration: 2000,
+  delay: 400,
+  reset: true, //resets animations
+});
+
+// hero section
+sr.reveal('.hero__text', { origin: 'top' });
+sr.reveal('.hero__img', { origin: 'right' });
+
+// stars section
+sr.reveal('.stats__item', {
+  delay: 400,
+  origin: 'top',
+  distance: '100px',
+  interval: 100,
+});
+
+// services section
+sr.reveal('.services');
+sr.reveal('.services__top');
+sr.reveal('.services__item', {
+  delay: 400,
+  interval: 100,
+  distance: '100px',
+  origin: 'bottom',
+});
+
+// Appointment section
+sr.reveal('.appointment__title', { origin: 'left' });
+sr.reveal('.appointment__form', { origin: 'right' });
+
+// Testimionals section
+sr.reveal('.testimionals__container', {
+  delay: 400,
+  interval: 100,
+  distance: '100px',
+  origin: 'bottom',
+});
+
+// Teams section
+sr.reveal('.teams__title', { origin: 'left' });
+sr.reveal('.teams__swiper', { origin: 'right' });
+
+// Faq section
+sr.reveal('.faq__title', { origin: 'top' });
+sr.reveal('.faq__item', { origin: 'bottom' });
+
+// Departments section
+sr.reveal('.departments__bg');
+
+// Blog section
+sr.reveal('.blog__title');
+sr.reveal('.blog__post', {
+  delay: 400,
+  interval: 100,
+  distance: '100px',
+  origin: 'bottom',
+});
+
+// Brand section
+sr.reveal('.brand__title', {
+  origin: 'left',
+});
+
+sr.reveal('.brand__logo', {
+  origin: 'right',
+});
+
+// Newsletter section
+sr.reveal('.newsletter');
+sr.reveal('.newsletter__container');
+
+// Footer
+sr.reveal('.footer__item', {
+  delay: 400,
+  interval: 100,
+  distance: '100px',
+  origin: 'bottom',
+});
